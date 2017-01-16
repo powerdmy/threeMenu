@@ -1,0 +1,198 @@
+       body {
+           font-family: "微软雅黑";
+       }
+       
+       li {
+           list-style: none;
+           display: block;
+       }
+       
+       a {
+           text-decoration: none;
+           display: block;
+       }
+       
+       ul {
+           margin: 0;
+           padding: 0;
+       }
+       /*star 三级菜单*/
+       .menubox{
+           width: 960px;
+           margin: 10px auto;
+       }
+       
+       .fixed {
+           zoom: 1;
+       }
+       
+       .fixed:after {
+           display: block;
+           content: '';
+           height: 0;
+           visibility: hidden;
+           clear: both;
+       }
+       
+       .m-item {
+           float: left;
+           position: relative;
+           margin-right: 15px;
+       }
+       .m-item > a {
+           line-height: 40px;
+           min-width: 82px;
+           padding: 0 11px 0 18px;
+           font-size: 14px;
+           color: #666666;
+           cursor: pointer;
+           background-color: #f6f6f6;
+           border: 1px solid #e6e6e6;
+       }
+       
+       .m-item:hover>a {
+           background-color: #1a87f3;
+           border-color: #1a87f3;
+           color: #fff;
+       }
+       .m-icon {
+           display: inline-block;
+           width: 16px;
+           height: 16px;
+           vertical-align: middle;
+           background: url('../images/icon_t16.png') no-repeat;
+       }
+       
+       .all-icon {
+           background-position: 0 -16px;
+       }
+       .m-item:hover .all-icon{
+           background-position: -16px -16px;
+       }
+       .rem-icon {
+           background-position: 0 -32px;
+       }
+       .m-item:hover .rem-icon{
+           background-position: -16px -32px;
+       }
+       .det-icon {
+           background-position: 0 -64px;
+       }
+       .m-item:hover .det-icon{
+           background-position: -16px -64px;
+       }
+       .garw-icon {
+           background-position: -16px -64;
+       }
+       
+       .arw-icon {
+           background-position: 0 0;
+           margin-left: 13px;
+       }
+       .m-item:hover .arw-icon{
+          background-position: -16px 0;
+       }
+       .m-item:hover a em{
+          border-color: #3e98f2;
+       }       
+       .raw-icon {
+           position: absolute;
+           right: 8px;
+           top: 10px;
+           background-position: 0 -48px;
+       }
+       
+       .m-item:last-child {
+           margin-left: 20px;
+       }
+       
+       .pub-down {
+           display: none;
+           position: absolute;
+           background-color: #fff;
+           border: 1px solid #e6e6e6;
+           box-sizing: border-box;
+       }
+       
+       .pub-down a {
+           display: block;
+           color: #666666;
+           background-color: #fff;
+           font-size: 14px;
+           padding: 10px 0 10px 17px;
+       }
+       
+       .down {
+           top: 42px;
+           left: 0;
+           border-top: none;
+           width: 100%;
+       }
+       
+       .down>li a:hover {
+           background-color: #efefef;
+       }
+       
+       .f-down {
+           top: 42px;
+           left: 0;
+           border-top: none;
+           width: 100%;
+       }
+       
+       .f-down>li>a {
+           position: relative;
+       }
+       
+       .f-down>li:hover>a {
+           background-color: #1a87f3;
+           color: #fff;
+       }
+       
+       .f-down li:hover>a>i {
+           background-position: -16px -48px;
+       }
+       
+       .s-down {
+           top: 1px;
+           right: -185px;
+           width: 185px;
+           height: 100%;
+       }
+       
+       .s-down ul {
+           float: left;
+       }
+       
+       .s-down a {
+           width: 70px;
+           float: left;
+       }
+       
+       .s-down a:hover {
+           color: #1a87f3;
+       }
+       
+       .m-item:hover .down,
+       .m-item:hover .f-down,
+       .f-down li:hover .s-down {
+           display: block;
+       }
+       
+       .icon-tha{
+        display: inline-block;
+        width: 27px;
+        height: 38px;
+        border-left: 1px solid #e6e6e6;
+        margin-left: 27px;
+        vertical-align: middle;
+        text-align: center;
+       }
+       .icon-tha i{
+        margin-left: 10px;
+       }
+       .m-item a span{
+          display: inline-block;
+          min-width: 56px;
+         }
+       /*end 三级菜单*/
